@@ -42,7 +42,7 @@ jeffersonferrari | <jefferson_ferrari@outlook.com>
 
 Filipe Adriano | <prime.flp@gmail.com>
 
-Pedro Henrique
+Pedro Henrique Oliveira | <pedrohso90@gmail.com>
 ## Community, discussion, contribution, and support
 (#casterlyrock)
 
