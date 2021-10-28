@@ -44,6 +44,6 @@ Filipe Adriano | <prime.flp@gmail.com>
 
 Pedro Henrique Oliveira | <pedrohso90@gmail.com>
 ## Community, discussion, contribution, and support
-(#casterlyrock)
+Slack: #xvaultctl
 
 
