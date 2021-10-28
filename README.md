@@ -38,6 +38,11 @@ Jonas Cavalcanti | <jonascavalcantineto@gmail.com>
 
 Robson Franklin | <robsonfrankin@gmail.com>
 
+jeffersonferrari | <jefferson_ferrari@outlook.com>
+
+Filipe Adriano | <prime.flp@gmail.com>
+
+Pedro Henrique
 ## Community, discussion, contribution, and support
 (#casterlyrock)
 
