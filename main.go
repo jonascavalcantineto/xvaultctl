@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"os"
+	"xvaultctl/utils"
 )
 
 type Options struct {
@@ -26,7 +27,7 @@ func main() {
 	fmt.Println("xVaultCTL Commands (CLI)")
 
 	if len(os.Args) < 2 || os.Args[1] == "--help" || os.Args[1] == "help" {
-		fmt.Println(help.Help())
+		fmt.Println(utils.Help())
 	}
 
 	options := new(Options)
@@ -101,35 +102,35 @@ func main() {
 		switch opt {
 		case "login":
 			if len(os.Args[index:]) <= 1 || os.Args[index+1] == "--help" || os.Args[index+1] == "help" {
-				fmt.Println(help.Login())
+				fmt.Println(utils.Login())
 			} else {
 				options.ObjBuildMsg("Login on vault Provider: \n")
 				options.Login()
 			}
 		case "update":
 			if len(os.Args[index:]) <= 1 || os.Args[index+1] == "--help" || os.Args[index+1] == "help" {
-				fmt.Println(help.Update())
+				fmt.Println(utils.Update())
 			} else {
 				options.ObjBuildMsg("Update vaults with configurations below: \n")
 				options.Update()
 			}
 		case "get":
 			if len(os.Args[index:]) <= 1 || os.Args[index+1] == "--help" || os.Args[index+1] == "help" {
-				fmt.Println(help.Get())
+				fmt.Println(utils.Get())
 			} else {
 				options.ObjBuildMsg("Getting vault with configurations below: \n")
 				options.Get()
 			}
 		case "create":
 			if len(os.Args[index:]) <= 1 || os.Args[index+1] == "--help" || os.Args[index+1] == "help" {
-				fmt.Println(help.Create())
+				fmt.Println(utils.Create())
 			} else {
 				options.ObjBuildMsg("Creating vaults with configurations below: \n")
 				options.Create()
 			}
 		case "grant":
 			if len(os.Args[index:]) <= 1 || os.Args[index+1] == "--help" || os.Args[index+1] == "help" {
-				fmt.Println(help.Grant())
+				fmt.Println(utils.Grant())
 			} else {
 				options.ObjBuildMsg("Deleting vault with configurations below: \n")
 				options.Grant()
@@ -170,7 +171,7 @@ func (options Options) Login() {
 		fmt.Println("Vault Token:", options.Vault.Token)
 
 	} else {
-		fmt.Println(help.Login())
+		fmt.Println(utils.Login())
 	}
 }
 
